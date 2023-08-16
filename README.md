@@ -75,10 +75,10 @@ git clone https://github.com/programmify-workspace/programmify.git
 4. Create a pull request on GitHub, detailing your changes and the problem they solve.
 
 ### Resources
-Node.js: https://nodejs.org/
-Express: https://expressjs.com/
-Bootstrap (Bootswatch): https://bootswatch.com/
-Nodemailer: https://nodemailer.com/
-PostgreSQL: https://www.postgresql.org/4
+1. Node.js: https://nodejs.org/
+2. Express: https://expressjs.com/
+3. Bootstrap (Bootswatch): https://bootswatch.com/
+4. Nodemailer: https://nodemailer.com/
+5. PostgreSQL: https://www.postgresql.org/4
 
 
