@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programmify</title>
-    <link rel="stylesheet" href="./Style/bootstrap.css">
-</head>
-<body>
-   <nav>
-
-   </nav>
+    <link rel="stylesheet" href="./Style/bootstrap.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./image/logo.png" alt="Programmify logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"></li>
+          </ul>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <form class="d-flex">
+                <input 
+                  class="form-control me-sm-2 prog-search"
+                  type="search"
+                  placeholder="Search..."
+                />
+              </form>
+            </li>
+          </ul>
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </div>
+      </div>
+    </nav>
     <main>
-        
+      <div class="hero">
+        <div class="hero-intro pt-5">
+          <h1 class="heroh1">
+            EMPOWER YOUR CREATIVITY<br />UNLEASH YOUR POTENTIAL
+          </h1>
+          <h3 class="text-warning heroh3 pt-3">
+            With Programmify you get inspired to build the project<br />of your
+            dreams.
+          </h3>
+          <button class="btn herobtn m-3">Join Waitlist</button>
+        </div>
+        <div class="hero-prog mt-4">
+          <h1 class="pt-1">WHAT IS PROGRAMMIFY?</h1>
+          <p class="prog-desc">
+            Unleash your coding prowess with Programmify! Join our cutting-edge
+            platform to connect with like-minded professionals, showcase your
+            projects, access learning resources, and participate in exciting
+            gamified challenges. Fuel your passion, push innovation boundaries,
+            and embark on a journey of continuous growth and creativity.
+            <br />Don't just dream it – code it with Programmify!
+          </p>
+          <p class="prog-out">
+            Get the work you’re most proud of the recognition it deserves.
+          </p>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
