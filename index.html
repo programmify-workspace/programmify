@@ -4,48 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programmify</title>
-    <link rel="stylesheet" href="./Style/bootstrap.css" />
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/cerulean/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./Style/bootstrap.css" /> -->
+    
+<style>
+
+  /* Apply flexbox to the card container */
+
+/* Style for each card */
+  *{
+      font-family: Monteserrat;
+  }
+
+  .card{
+      padding: 10px 40px;
+      background: #DEE3F5;
+      border-color: 2px solid #000;
+      color: #000;
+      margin: 0 5px;
+      border-radius: 0;
+  }
+  h5{
+      font-weight: 900;
+  }
+  .stars li{
+      color: #F5B204;
+  }
+  hr{
+      border: 1px solid #000;
+  }
+  .card-1 div span{
+      text-align: center;
+      font-size: 11px;
+  }
+  .coming-soon{
+      height: 40%;
+  }
+  .coming-soon h1{
+      color: #36489E;
+      font-weight: 900;
+  }
+  footer{
+      background: #36489E;
+  }
+  .footer ul li{
+      color: #6ABBEE;
+      list-style-type: none;
+      font-size: 20px;
+  }
+</style>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./image/logo.png" alt="Programmify logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor01"
-          aria-controls="navbarColor01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item"></li>
-          </ul>
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <form class="d-flex">
-                <input 
-                  class="form-control me-sm-2 prog-search"
-                  type="search"
-                  placeholder="Search..."
-                />
-              </form>
-            </li>
-          </ul>
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        ><img src="./image/logo.png" alt="Programmify logo"
+      /></a>
+      <button
+        class="navbar-toggler btn prog-btn"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+      Join waitlist
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+          </li>
+        </ul><ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <form class="d-flex">
+              <input 
+                class="form-control me-sm-2 prog-search"
+                type="search"
+                placeholder="Search..."
+                style="color: #000;"
+              />
+            </form>
+          </li>
+        </ul>
+        <div>
+          <button class="btn prog-btn">Join waitlist</button>
+          </div> 
       </div>
-    </nav>
+    </div>
+  </nav>
+  <body>
     <main>
-      <div class="hero">
+      <div class="hero p-2">
         <div class="hero-intro pt-5">
           <h1 class="heroh1">
             EMPOWER YOUR CREATIVITY<br />UNLEASH YOUR POTENTIAL
@@ -54,23 +106,154 @@
             With Programmify you get inspired to build the project<br />of your
             dreams.
           </h3>
-          <button class="btn herobtn m-3">Join Waitlist</button>
+          <button class="btn prog-btn prog-bbtn">Join waitlist</button>
         </div>
         <div class="hero-prog mt-4">
-          <h1 class="pt-1">WHAT IS PROGRAMMIFY?</h1>
-          <p class="prog-desc">
+          <h1 class="pt-1" style="font-weight: 600;">WHAT IS PROGRAMMIFY?</h1>
+          <h3 class="prog-desc">
             Unleash your coding prowess with Programmify! Join our cutting-edge
             platform to connect with like-minded professionals, showcase your
             projects, access learning resources, and participate in exciting
             gamified challenges. Fuel your passion, push innovation boundaries,
             and embark on a journey of continuous growth and creativity.
             <br />Don't just dream it – code it with Programmify!
-          </p>
+          </h3>
           <p class="prog-out">
             Get the work you’re most proud of the recognition it deserves.
           </p>
         </div>
       </div>
     </main>
-  </body>
+    <section id="second-section">
+        <div class="container mt-3">
+
+            <!-- Coming soon cards section -->
+
+            <div class="row justify-content-center">
+                <div class="col-md-2 col-sm-6 mb-6 card-1">
+                    <div class="card d-flex align-items-center justify-content-center shadow border-black" style="border: 1px solid #000;">
+                        <span class="text-center">Coming Soon</span>
+                        <h5>Spaces</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-6 card-1">
+                    <div class="card d-flex align-items-center justify-content-center shadow" style="border: 1px solid #000;">
+                        <span class="text-center">Coming Soon</span>
+                        <h5>Jobs</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-6 card-1">
+                    <div class="card d-flex align-items-center justify-content-center shadow" style="border: 1px solid #000;">
+                        <span class="text-center">Coming Soon</span>
+                        <h5>Forum</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 mb-6 card-1">
+                    <div class="card d-flex align-items-center justify-content-center shadow" style="border: 1px solid #000;">
+                        <span class="text-center">Coming Soon</span>
+                        <h5>Market Place</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-6 card-1">
+                    <div class="card d-flex align-items-center justify-content-center shadow" style="border: 1px solid #000;">
+                        <span class="text-center">Coming Soon</span>
+                        <h5>Resources</h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Paragraph section -->
+
+            <h5 class="text-center" style="color: #36489E; font-weight: 300;">Get unlimited learning resources to kickstart your coding journey <br> 
+                for free and connect with other developers.  
+            </h5><br>
+            <div class="col-md-12 text-center">
+            <button class="btn card d-flex justify-content-center align-items-center shadow" style="margin: 0 auto; padding: 10px 50px; border: 1px solid #000; font-weight: 1000; border-radius: 25px; background-color: #fff; ">Join waitlist</button>
+            </div><br>
+            <h1 class="text-center mt-5" style="color: #36489E;">WHAT DEVELOPERS SAY ABOUT <br> PROGRAMMIFY </h1><br>
+            <h3 class="text-center " style="color: #000;">Our community development often deals with <br> community works, planning and collaboration</h3><br>
+
+            <!-- Testimonies section -->
+
+            <div id="testimonials" class="row justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card d-flex flex-column align-items-center justify-content-center shadow" style="border: 1px solid #000; padding: 15px;">
+            
+                        <ul class="stars list-unstyled d-flex align-self-stretch gap-2">
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <span class="text-center">Thanks to Programmify, I was able to come out and show my skill, I don’t know if it’s only me but this platform really works the magic, I don’t need to be scared for not being popular but my product still sells from the platform.</span><hr class="w-75">
+                        <span>CEO of mildstone</span>
+                        <span>John Dowel</span>
+                    </div>
+                </div><br>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card d-flex flex-column align-items-center justify-content-center shadow" style="border: 1px solid #000; padding: 15px;">
+            
+                        <ul class="stars list-unstyled d-flex align-self-stretch gap-2">
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <p class="text-center" style="font-weight: 700;">Thanks to Programmify, I was able to come out and show my skill, I don’t know if it’s only me but this platform really works the magic, I don’t need to be scared for not being popular but my product still sells from the platform.</p><hr class="w-75">
+                        <span>CEO of mildstone</span>
+                        <span>John Dowel</span>
+                    </div>
+                </div><br>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card d-flex flex-column align-items-center justify-content-center shadow" style="border: 1px solid #000; padding: 15px;">
+            
+                        <ul class="stars list-unstyled d-flex align-self-stretch gap-2">
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        <span class="text-center">Thanks to Programmify, I was able to come out and show my skill, I don’t know if it’s only me but this platform really works the magic, I don’t need to be scared for not being popular but my product still sells from the platform.</span><hr class="w-75">
+                        <span>CEO of mildstone</span>
+                        <span>John Dowel</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comming Soon banner -->
+
+            <div class="coming-soon w-75 card-body m-auto position-absolute top-100 start-50 mt-md-0 mt-5 translate-middle fs-1 bg-white " style="border: 1px solid black;">
+                <h1 class="p-5 text-center mt-5">COMING SOON!</h1>
+                <i class="fas fa-times position-absolute top-0 end-0 fs-5" id="cancelButton"></i>
+            </div>
+            
+            <script>
+                document.getElementById("cancelButton").addEventListener("click", function() {
+                    document.querySelector(".coming-soon").style.display = "none";
+                });
+            </script>
+
+        </div>
+    </section>
+</body>
+
+<!-- Footer Section  -->
+
+<footer class="text-center">
+    <div class="footer text-white">
+        <ul class="d-flex gap-3 align-items-center justify-content-center pt-5 pb-4">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+        </ul>
+    </div>
+
+    <span>©Copyright 2023 
+        <a href="" class="text-white"><span style="font-weight: 800;">programmify.org</span></a><br>
+        All rights reserved.
+    </span>
+</footer>
 </html>
