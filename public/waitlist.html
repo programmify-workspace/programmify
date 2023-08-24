@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style/bootstrap.css">
+    <link rel="icon" href="./image/icon.png">
+    <title>Programmify - Join waitlist</title>
+    <style>
+        /* Custom CSS for image */
+        body {
+            position: relative;
+            min-height: 90vh;
+            background-color: #fff;
+        }
+        body::before {
+            content: "";
+            background-color: #fff;
+            background-image: url(image/icon.png);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            opacity: 0.3; /* Adjust the opacity level (0 to 1) */
+            z-index: -1;
+        }
+        /* Center content vertically and horizontally */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        img{
+            width: 250px;
+            padding: 15px 15px 10px 15px;
+        }
+        span i{
+            color: #797474;
+        }
+        .input-group{
+            background-color: #E4F1FA;
+        }
+        ul.d-flex.m-auto{
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./image/logo.png" alt="">
+    </div>
+    <div class="center-content">
+        <!-- Your content goes here -->
+        <h3>-Coming soon</h3>
+        <h3 style="font-family: Montserrat;
+        letter-spacing: 0.1em;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        " class="fs-5 fw-bolder text-center lh-lg">EMPOWER YOUR CREATIVITY <br> UNLEASH YOUR POTENTIAL</h3><br>
+
+        <p style="font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        " class="text-dark fs-4 fw-bold">Get notified when we lunch</p>
+
+        <div class="d-grid">
+            <form action="/joinWaitlist" method="post" id="form" enctype="application/x-www-form-urlencoded">
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-user" style="color: #797474;"></i></span>
+                    <input type="text" name="full_name" class="form-control h-25" placeholder="Full Name" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" name="email" class="form-control h-25" placeholder="Email" required>
+                </div>
+                <div class="mb-3 text-center">
+                    <!-- Wrap reCAPTCHA in a text-center div -->
+                    <div class="text-center">
+                        <div class="g-recaptcha text-white w-50" data-sitekey="6LfDB0MnAAAAAJFVvQx-zIqenvBZu_hxRqwibJNy" data-theme="light">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 text-center">
+                <button
+                        type="submit"
+                        name="submit"
+                        class="navbar-toggler btn pt-3 pb-3 text-center fs-4 btn-lg btn-block w-100 text-sm text-black"
+                        type="button"
+                        style="border: 0.5px solid #000000; background-color: #E4F1FA; border-radius: 15px;
+                        font-weight: 900; box-shadow: 0px 4px 4px 0px #00000040 inset;
+                        box-shadow: 4px -4px -4px 4px rgba(0, 0, 0, 0.25);"
+                        id="submitButton"
+                    >
+                    Join waitlist
+                    </button>
+                </div>
+            </form>
+
+            <div class="footer text-center">
+                <ul class="d-flex m-auto align-items-center justify-content-center">
+                    <li class="mx-2"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="mx-2"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="mx-2"><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li class="mx-2"><i class="fa-brands fa-facebook"></i></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        <span class="text-black mt-2">©Copyright 2023 <span class="fw-bolder">programmify.org</span> All rights reserved.</span class="text-black">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="/js/waitlist.js"></script>
+<!-- 
+<script>
+  document.getElementById('form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(document.getElementById('form'));
+
+    try {
+      const response = await fetch('/joinWaitlist', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        // Handle success (e.g., show a success message)
+      } else {
+        // Handle error (e.g., show an error message)
+      }
+    } catch (error) {
+      // Handle network error
+    }
+  });
+</script> -->
+
+<!-- Waitlist form recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</body>
+</html> 
