@@ -80,5 +80,3 @@ git clone https://github.com/programmify-workspace/programmify.git
 3. Bootstrap (Bootswatch): https://bootswatch.com/
 4. Nodemailer: https://nodemailer.com/
 5. PostgreSQL: https://www.postgresql.org/4
-
-
