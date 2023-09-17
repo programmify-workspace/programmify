@@ -1,0 +1,32 @@
+<!-- waitlist_readme.md -->
+
+# Getting Started with the Waitlist Page
+
+## Prerequisites
+Before you get started, make sure you have the following prerequisites installed:
+
+* **Node.js and npm**: You can download and install them from nodejs.org.
+* **XAMPP**: Install XAMPP, which includes Apache and MySQL, from apachefriends.org.
+
+
+## Installation Steps
+
+1. **Install Dependencies**:
+Install the required Node.js packages by running: `npm install`.
+
+2. **Start XAMPP**:
+Open XAMPP and start both the Apache and MySQL servers.
+
+3. **Set Up the Database**:
+- Open phpMyAdmin in your web browser.
+- Create a new database and name it something like __waitlist__.
+- Import the _messages.sql_ file into your newly created database. This file can be found in the project's root directory.
+
+4. **Environment Variables**:
+
+- Create a .env file in the project's root directory.
+- Copy the content from .env.example into your .env file.
+- Replace the placeholders in the .env file with your own values. For example, set the database username and password.
+
+5. **Start the Application**:
+Run the following command: `npm start`
