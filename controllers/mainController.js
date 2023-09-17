@@ -1,7 +1,6 @@
 const nodemailer = require('nodemailer');
 const messageModel = require('../models/messageModel');
 
-// Ensure transporter is declared properly
 let transporter;
 
 if (process.env.NODE_ENV === 'production') {
