@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Swal.fire({
               icon: 'success',
               title: 'Success',
-              text: 'Your message has been sent successfully!',
+              text: 'Congratulations! You are now on the waitlist!',
               confirmButtonText: 'OK',
             });
     
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Swal.fire({
               icon: 'error',
               title: 'Error',
-              text: 'Message sending failed!',
+              text: 'We encountered an issue while adding you to the waitlist',
               confirmButtonText: 'OK',
             });
           }

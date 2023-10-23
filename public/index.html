@@ -35,10 +35,6 @@
             text-align: center;
             font-size: 11px;
         }
-        .coming-soon h1{
-            color: #36489E;
-            font-weight: 900;
-        }
         footer{
             background: #36489E;
         }
@@ -54,13 +50,13 @@
 
   <!-- Nav -->
 
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" style="position: fixed; width: 100%; z-index: 2;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"
-        ><img src="./image/logo.png" alt="Programmify logo"
-      /></a>
+      <a class="navbar-brand" href="#">
+        <img src="./image/logo.png" alt="Programmify logo"/>
+      </a>
       <button
-        class="navbar-toggler btn prog-btn fs-3"
+        class="navbar-toggler btn prog-btn fs-5"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarColor01"
@@ -75,7 +71,7 @@
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
           </li>
-        </ul><ul class="navbar-nav me-auto">
+        </ul><ul class="navbar-nav me-auto" style="display: none">
           <li class="nav-item">
             <form class="d-flex">
               <input 
@@ -99,6 +95,8 @@
       window.location.href = '/waitlist';
     }
   </script>
+
+
   <!-- Body -->
 
   <body>
@@ -108,15 +106,22 @@
           <h1 class="heroh1">
             EMPOWER YOUR CREATIVITY<br />UNLEASH YOUR POTENTIAL
           </h1>
-          <h3 class="text-warning heroh3 pt-3 fw-bold">
+          <h3 class="text-warning heroh3 pt-3 fw-bold text-black fst-italic fpb-4" style="font: 20px;">
             With Programmify you get inspired to build the project<br />of your
             dreams.
-          </h3>
-          <button class="btn prog-btn prog-bbtn fs-3" onclick="redirectToWaitlist()">Join waitlist</button>
+          </h3><br>
+          <button class="navbar-toggler btn prog-btn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="redirectToWaitlist()">Join waitlist</button>
         </div>
         <div class="hero-prog mt-4">
-          <h1 class="pt-1" style="font-weight: 600;">WHAT IS PROGRAMMIFY?</h1><br>
-          <h3 class="prog-desc">
+          <h1 class="pt-5 fs-2" style="font-weight: 600;">WHAT IS PROGRAMMIFY?</h1><br>
+          <h3 class="prog-desc fw-medium fst-italic">
             Unleash your coding prowess with Programmify! Join our cutting-edge
             platform to connect with like-minded professionals, showcase your
             projects, access learning resources, and participate in exciting
@@ -167,7 +172,7 @@
                     </div>
                 </div>
             </div>
-            <br>
+            <br><br>
 
             <!-- Paragraph section -->
 
@@ -176,21 +181,20 @@
             </h5><br>
             <div class="col-md-12 text-center">
             <button
-                class="navbar-toggler btn prog-btn fw-bolder fs-3"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                style="margin: 0 auto; padding: 15px 70px;"
-                onclick="redirectToWaitlist()"
+            class="navbar-toggler btn prog-btn fs-5"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="redirectToWaitlist()"
             >
             Join waitlist
             </button>
             </div><br>
-            <h1 class="text-center mt-5" style="color: #36489E;">WHAT DEVELOPERS SAY ABOUT <br> PROGRAMMIFY </h1><br>
-            <h3 class="text-center " style="color: #000;">Our community development often deals with <br> community works, planning and collaboration</h3><br>
+            <h1 class="text-center mt-5" style="color: #36489E;">PROGRAMMIFY COMMUNITY </h1><br>
+            <h3 class="text-center fst-italic" style="color: #000;">Learn more about incredible programmers <br> and their great creations with code!</h3><br>
 
             <!-- Testimonies section -->
 
@@ -205,39 +209,13 @@
                             <li><i class="fa-regular fa-star"></i></li>
                             <li><i class="fa-regular fa-star"></i></li>
                         </ul>
-                        <span class="text-center fw-bolder">Thanks to Programmify, I was able to come out and show my skill, I don’t know if it’s only me but this platform really works the magic, I don’t need to be scared for not being popular but my product still sells from the platform.</span><hr class="w-75">
+                        <span class="text-center fw-bolder h-75"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Slack: Where Team Collaboration Thrives<br><br>In the world of workplace communication, Slack is nothing short of a revolution. This digital platform, founded by <a href="https://twitter.com/stewart?ref_src=twsrc%5Etfw">@stewart</a> and <a href="https://twitter.com/iamcal?ref_src=twsrc%5Etfw">@iamcal</a> in 2013, has transformed the way teams connect.<br><br>Thread! 🧵 <a href="https://t.co/RlGGqhBNC3">pic.twitter.com/RlGGqhBNC3</a></p>&mdash; The programmers&#39; place (@programmify) <a href="https://twitter.com/programmify/status/1702362002654371843?ref_src=twsrc%5Etfw">September 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span><hr class="w-75">
                         <span>CEO of mildstone</span>
                         <span>John Dowel</span>
                         
                     </div>
                     <img src="./image/Rectangle 18.png" alt="" class="image">
 
-                    <style>
-                        .image {
-                        /* Rotate the image 45 degrees clockwise */
-                        transform: rotate(160deg);
-                        margin-top: -40%;
-                        margin-left: -25%;
-                        z-index: -999;
-                        width: 250px;
-                        }
-                        .coming-soon {
-                            border: 1px solid black;
-                            background-color: white;
-                            padding: 4.5rem 0;
-                            /* position: relative; */
-                            z-index: 1;
-                            /* top: -375px; */
-                            margin-top: -420px;
-                        }
-                        @media (max-width: 767px) {
-                            .coming-soon {
-                                margin-top: -700px; /* Adjust the value as needed */
-                            }
-                        }
-                    </style>
-
-                    
                     
                 </div><br>
                 <div class="col-md-4 col-sm-6 mb-3">
@@ -249,7 +227,7 @@
                             <li><i class="fa-regular fa-star"></i></li>
                             <li><i class="fa-regular fa-star"></i></li>
                         </ul>
-                        <span class="text-center fw-bolder">Thanks to Programmify, I was able to come out and show my skill, I don’t know if it’s only me but this platform really works the magic, I don’t need to be scared for not being popular but my product still sells from the platform.</span><hr class="w-75">
+                        <span class="text-center fw-bolder"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">👩‍💻 Celebrating She Code Africa: Empowering Women in Tech! <br><br>She Code Africa is a trailblazing organization dedicated to empowering and uplifting women in the world of technology. Let&#39;s embark on a journey to explore its remarkable story.<br><br>Thread! 🧵 <a href="https://t.co/KxcLIZvRpZ">pic.twitter.com/KxcLIZvRpZ</a></p>&mdash; The programmers&#39; place (@programmify) <a href="https://twitter.com/programmify/status/1696565555468161544?ref_src=twsrc%5Etfw">August 29, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span><hr class="w-75">
                         <span>CEO of mildstone</span>
                         <span>John Dowel</span>
                     </div>
@@ -263,28 +241,12 @@
                             <li><i class="fa-regular fa-star"></i></li>
                             <li><i class="fa-regular fa-star"></i></li>
                         </ul>
-                        <span class="text-center fw-bolder">Thanks to Programmify, I was able to come out and show my skill, I don’t know if it’s only me but this platform really works the magic, I don’t need to be scared for not being popular but my product still sells from the platform.</span><hr class="w-75">
+                        <span class="text-center fw-bolder"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">In the realm of mobile app development, Flutter has emerged as a game-changer. This open-source UI software development kit, created by Google, allows developers to craft stunning, natively compiled applications for mobile, web, and desktop from a single codebase.<br><br>Thread! 🧵 <a href="https://t.co/DuuMNWTORY">pic.twitter.com/DuuMNWTORY</a></p>&mdash; The programmers&#39; place (@programmify) <a href="https://twitter.com/programmify/status/1696191309327847830?ref_src=twsrc%5Etfw">August 28, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span><hr class="w-75">
                         <span>CEO of mildstone</span>
                         <span>John Dowel</span>
                     </div>
                 </div><br><br>
             </div>
-            
-            <!-- Comming Soon banner -->
-
-            <div class="row justify-content-center">
-                <div class="coming-soon col-md-12 text-center w-75">
-                    <h1 class="p-5 mt-5">COMING SOON!</h1>
-                    <i class="fas fa-times fs-5" id="cancelButton"></i>
-                </div>
-            </div>
-            
-            <script>
-                document.getElementById("cancelButton").addEventListener("click", function() {
-                    document.querySelector(".coming-soon").style.display = "none";
-                });
-            </script>
-
         </div>
     </section>
 </body>
@@ -294,16 +256,16 @@
 <footer class="text-center">
     <div class="footer text-white">
         <ul class="d-flex gap-3 align-items-center justify-content-center pt-5 pb-4">
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-linkedin-in"></i></li>
-            <li><i class="fa-brands fa-facebook"></i></li>
+            <a href="https://instagram.com/programmify_org?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-instagram"></i></li></a>
+            <a href="https://twitter.com/programmify" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-twitter"></i></li></a>
+            <a href="https://www.linkedin.com/company/programmify/" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+            <a href="https://www.facebook.com/programmify" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-facebook"></i></li></a>
         </ul>
     </div>
 
     <span style="color: #CADDF8;">©Copyright 2023 
         <a href="" class="text-white text-decoration-none"><span style="font-weight: 800;" class="text-white">programmify.org</span></a>
         All rights reserved.
-    </span>
+    </span><br><br>
 </footer>
 </html>
